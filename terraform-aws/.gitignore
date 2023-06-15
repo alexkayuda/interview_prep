@@ -1,5 +1,5 @@
 # hide my secrets
-./secrets/*
+secrets/*
 
 # Local .terraform directories
 **/.terraform/*
