@@ -20,6 +20,12 @@ fruits.remove("watermellon")
 fruits.pop()
 
 
+print(fruits)
+
+fruits.sort(reverse=True)
+
+print(fruits)
+
 # list.index(x[, start[, end]]) - Return index of the first item whose value is equal to x. Raises a ValueError if there is no such item.
 #                Optional arguments start and end are interpreted as in the slice notation and are used to limit the search to a particular 
 #               subsequence of the list. The returned index is computed relative to the beginning of the full sequence rather than the start argument.

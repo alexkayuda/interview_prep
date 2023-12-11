@@ -20,10 +20,10 @@ tel['irv'] = 4127
 print(tel)                  # {'jack': 4098, 'guido': 4127, 'irv': 4127}
 
 # only prints Keys
-list(tel)                   # ['jack', 'guido', 'irv']
+print(list(tel))                   # ['jack', 'guido', 'irv']
 
 # sorts keys
-sorted(tel)                 # ['guido', 'irv', 'jack']
+print(sorted(tel))                 # ['guido', 'irv', 'jack']
 
 print('guido' in tel)       # returns True
 
