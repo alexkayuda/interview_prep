@@ -6,13 +6,13 @@ func main() {
 
 	// Resource: https://go.dev/tour/basics/11
 
-	// strings()
+	strings()
 
-	//integers()
+	integers()
 
-	//bytes()
+	bytes()
 
-	// floats()
+	floats()
 }
 
 func strings() {
