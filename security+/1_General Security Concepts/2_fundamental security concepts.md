@@ -1,5 +1,7 @@
 # Summary fundamental security concepts
 
+<br>
+
 ## Non-Repudiation
 
 - A service that provides proof of the integrity and origin of data
