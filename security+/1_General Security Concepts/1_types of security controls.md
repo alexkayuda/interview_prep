@@ -34,6 +34,7 @@
 - Corrective Controls
   - Mitigate any potential damage and restore our systems to their normal state
     - Example: Antivirus software
+    - Example: Automatically restart services after it has detected the system has crashed
 - Compensating Controls
   - Alternative measures that are implemented when primary security controls are not feasible or effective
     - Example: restores the functionality of systems via alternative methods, such as using a backup
