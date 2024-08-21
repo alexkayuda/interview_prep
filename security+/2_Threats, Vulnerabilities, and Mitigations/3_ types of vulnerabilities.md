@@ -21,31 +21,34 @@
 
 <br>
 
-#### Application
+#### Application Vulnerabilities
 
 - Memory injection
+  - Act of exploiting vulnerabilities in a computer's software or operating system to inject malicious code into the computer's memory
 - Buffer overflow
   - Occurs when a process stores data outside the memory range allocated by the developer
   - Attackers exploit the excess data written beyond buffer boundaries to manipulate program execution
+  - <b> Buffer overflow attacks occur when an application receives more data than it can process, which can cause the application to crash or allow an attacker to execute arbitrary code. </b>
   - Mitigation:
     - Address Space Layout Randomization (ASLR)
       - Helps prevent attackers from guessing return pointer addresses
       - Randomizes memory addresses used by well-known programs, making it harder to predict the location of the attacker's code
 - Race conditions
-  Race conditions occur when multiple threads or processes access and manipulate shared resources simultaneously
-  - Time-of-check (TOC)
-    - <b> Attackers manipulate a resource's state after it is checked but before it is used </b>
+  - Race conditions occur when multiple threads or processes access and manipulate shared resources simultaneously
+  - <b> Time-of-check (TOC) </b>
+    - Attackers manipulate a resource's state after it is checked but before it is used
     - Example:
       - overdrawing a bank account due to a time delay between checking and transferring funds
-  - Time-of-Use (TOU)
+  - <b> Time-of-Use (TOU) </b>
     - Attackers alter a resource's state after it is checked but before it is used
     - Focuses on the time when the resource is utilized, rather than the time of the initial check
-  - Time-of-Evaluation (TOE)
+  - <b> Time-of-Evaluation (TOE) </b>
     - Attackers manipulate data or resources during the system's decision-making or evaluation process
     - Can lead to incorrect results or unexpected behavior
 - Malicious update
+  - Appear as legitimate security updates but contain malware or exploits
 
-#### Operating system (OS)-based
+#### OS-based Vulnerabilities
 
 - Unpatched Systems
   - Lack the latest security updates, making them vulnerable
@@ -55,7 +58,7 @@
   - Involves unauthorized data transfers from an organization to an external location
 - Misconfigurations
 
-#### Web-based
+#### Web-based Vulnerabilities
 
 - SQL injection (SQLi)
   - Inserting malicious SQL code into input fields
@@ -83,36 +86,46 @@
 - Cross-site Request Forgery (XSRF)
   - Malicious script is used to exploit a session started on another site within the same web browser
 
-#### Hardware
+#### Hardware Vulnerabilities
 
 Security flaws or weaknesses in a device's physical components or design
 
 - Firmware
   - Specialized software stored on hardware devices
-  - Example: BIOS or Drivers
+  - <b> Example: BIOS or Drivers vulnerabilities include instances where processors inside the computer allow malicious programs to steal data during processing. </b>
 - End-of-life
   - No updates or support will be provided from the manufacture
 - Legacy
   - Outdated and superseded by newer alternatives
 
-#### Virtualization
+Example:
 
-- Virtual machine (VM) escape
+- Question: Which risk mitigation strategies should the corporation adopt to ensure the security of its hardware devices without unnecessarily hindering its operations?
+  - Answer: Implement strict supplier vetting processes && Adopt a zero-trust network architecture.
+- Question: What is the system administrator's MOST effective course of action to reduce potential security vulnerabilities caused by these legacy machines running end-of-life operating systems?
+  - Answer: Isolate the legacy machines on a separate network segment
+
+#### Virtualization Vulnerabilities
+
+- Virtual Machine Escape (VME)
+  - Attackers break out of isolated VMs to access the hypervisor
 - Resource reuse
+  - Improper clearing of resources may expose sensitive data
+  - <b> MITIGATION: Apply secure deallocation.</b>
 
-#### Cloud-specific
+#### Cloud-specific Vulnerabilities
 
-#### Supply chain
+#### Supply chain Vulnerabilities
 
 - Service provider
 - Hardware provider
 - Software provider
 
-#### Cryptographic
+#### Cryptographic Vulnerabilities
 
 #### Misconfiguration
 
-#### Mobile device
+#### Mobile device Vulnerabilities
 
 - Side loading
   - Installing apps from unofficial sources bypassing the device's default app store
