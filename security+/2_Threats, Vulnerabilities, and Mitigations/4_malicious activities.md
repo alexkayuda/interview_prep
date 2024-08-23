@@ -20,9 +20,11 @@
 - Viruses
   - Attach to clean files, spread, and corrupt host files
 - Worms
-  - Standalone programs replicating and spreading to other computers
+  - Worms are a type of standalone malicious software that replicate themselves to spread to other computers over a network. They do not typically collect user information.
+  - Worms represent one of the first types of malware that spreads without any authorization from the user. An executable code of another process conceals a worm
 - Trojans
   - Disguise as legitimate software, grant unauthorized access
+  - Trojans can steal information; however, they differ from spyware in that they often create a backdoor in the system for unauthorized access.
 - Ransomware
   - Encrypts user data, demands ransom for decryption
 - Zombies and Botnets
@@ -34,11 +36,12 @@
 - Keyloggers
   - Record keystrokes, capture passwords or sensitive information
 - Spyware
-  - Spyware monitors and gathers user/system information
+  - Spyware is a type of malicious software that collects information about users' activity without their knowledge. This data can include personal information, browsing habits, or even sensitive data such as passwords.
 - Bloatware
-  - Bloatware consumes resources without value
+  - Bloatware refers to unwanted software that comes preinstalled on a system or bundled with other software, occupying memory and processing resources and potentially leading to system slowdowns.
 - Logic bomb
   - Malicious code that's inserted into a program, and the malicious code will only execute when certain conditions have been met
+  - A logic bomb refers to a string of code embedded in a software system or computer program that remains dormant until triggered by a specific logical event.
 
 ### Types of Network attacks
 
@@ -83,18 +86,39 @@
 
 ### Types of Application attacks
 
-- Injection
 - Buffer overflow
-- Replay
-- Privilege escalation
 - Forgery
-- Directory traversal
+- Directory Traversal Attacks
+  - Exploiting insufficient security validation of user-supplied input file names
+  - Example: http://example.com/../../../../..etc/shadow or ((%2e%2e%2f represents ../ )
+- Privilege Escalation Attack
+  - Exploiting system vulnerability to gain elevated access
+  - Vertical Privilege Escalation
+    - Going from normal user to higher privilege (e.g., admin or root)
+    - Commonly associated with code execution leading to admin-level permissions
+  - Horizontal Privilege Escalation
+    - Accessing or modifying resources at the same level as the attacker
+    - Occurs when a user attempts to access resources for which they don't have permissions at the same level
+- Replay Attacks
+  - Type of network-based attack where valid data transmissions are maliciously or fraudulently re-broadcast, repeated, or delayed
+  - Involves intercepting data, analyzing it, and deciding whether to retransmit it later
+- Session Hijacking
+  - Attacker takes over a user session to gain unauthorized access
+  - Example: Concurrent session usage can lead to a significant increase in resource consumption, even if the total workload on the server has not increased.
+- Malicious Code Injection Attacks
+  - Injection attacks involve sending untrusted data to an interpreter as part of a command or query. This data tricks the interpreter into executing unintended commands, potentially allowing unauthorized access or data retrieval.
 
 ### Types of Cryptographic attacks
 
 - Downgrade
+  - Force systems to use weaker or older cryptographic standards or protocols
+  - Countermeasures include phasing out support for insecure protocols and version-intolerant checks
 - Collision
+  - Find two different inputs producing the same hash output
 - Birthday
+  - Occurs when two different messages result in the same hash digest (collision)
+  - Collisions in hashes can be exploited by attackers to bypass authentication systems
+  - Use longer hash output (e.g., SHA-256) to reduce collisions and mitigate the attack
 
 ### Types of Password attacks
 
