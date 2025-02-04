@@ -1,3 +1,8 @@
 # Do not commit practice questions gathered from several resources
 Security+/
+
+# Do not commit AWS Certs Prep Notes
 AWS_Certs_Prep/
+
+# ignore useless stuff
+.idea
