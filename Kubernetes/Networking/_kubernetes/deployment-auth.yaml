@@ -1,0 +1,24 @@
+# Official Reference: https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/deployment-v1/
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-auth
+spec:
+  replica: 1 # Number of desired pods (By Default (if not specified), 1 Pod will be created automatically)
+  selector:
+    matchLabels:
+      app: auth
+    #  matchExpressions:
+    # - { key: app, operator: In, values: [first-app, 21-app, my-app] }
+
+  # PodTemplateSpec describes the data a pod should have when created from a template
+  template:
+    metadata:
+      app: auth
+
+    # PodSpec is a description of a pod
+    spec:
+      containers:
+        - name: auth-container
+          image: akayuda/kub-auth:latest # DockerHub Repo

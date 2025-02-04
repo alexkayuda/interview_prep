@@ -12,6 +12,9 @@ def func2(name, age):
 def both(*args, **kwargs):
     print(f"args: {args} and kwargs: {kwargs}")
 
+def both2(retries=4, *args, **kwargs):
+    print(f"retries: {retries} and args: {args} and kwargs: {kwargs}")
+
 
 func1(name="Bob", age=15)
 
@@ -23,3 +26,5 @@ both(1,2,3,4,5, name="Bob")
 both(1,2, name="Alice", age = 25)
 both(1, name="John")
 
+
+both2(1,2,3, name="Steve")

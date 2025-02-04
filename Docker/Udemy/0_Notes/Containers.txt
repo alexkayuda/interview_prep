@@ -1,0 +1,41 @@
+# Create and Start a Docker container from images
+docker container run -it -- rm --name my-app-container-name my-app-image-name
+    - p 3000:80 = port mapping (3000 - locally and 80 inside of a container)
+    - i         = interructive mode, we can input something 
+    - t         = Allocate a pseudo-TTY
+    -- rm       = Auto-Delect this container when it's stopped
+
+
+# Start / Restart existing container
+docker container start container-name
+    -a = attached mode
+    -i = interructive mode (input)
+
+# Copy files/folders between a container and the local filesystem
+SYNTAX: docker container cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH 
+docker container cp ./logs/. app-container:/test
+    copy local logs folder and its contents to the test folder (create if does not exist) INSIDE of the running container
+docker container cp app-container:/test ./
+    copy test folder and its contents to the test folder (create if does not exist) to our local machine
+
+# Stop container
+docker container stop container-name
+
+# Delete STOPPED containers 
+docker container prune 
+
+# Delete container
+docker container rm container-name container-name
+
+# Delete ALL container FORCE
+docker container rm -f $(docker container -aq)
+
+
+-----------------------------------------------
+
+docker container run -it -d --name node_container node      
+                # Start a Node Docker container
+        -it     # wait for user input
+        -d      # don't bind the current terminal session to a docker container session 
+
+docker container exec -it node_container npm init

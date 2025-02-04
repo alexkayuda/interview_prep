@@ -1,0 +1,36 @@
+Commands:
+
+# -t = Tag the image 
+docker image build . -t app-image
+
+# 3000 -> my machine
+# 3001 -> docker port
+# create a new container and run it
+docker container run -d -p 3000:3001 --name app-container app-image
+# start already existing (but stopped) contaner
+docker container start app-container
+
+docker image ls -a
+docker container ls -a
+
+docker container stop app-container
+
+docker container prune
+docker image prune
+
+# Force to delete ALL images
+docker image rm -f $(docker images -aq)
+
+# Force to delete ALL containers
+docker container rm -f $(docker container -aq)
+
+# docker rm $(docker ps -aq --filter  status="exited")
+
+
+### -------------------------------------------------------------------------------------------------------------
+
+# to start listening to the output of the container (but we don't see previous messages!!)
+docker attach name-of-container
+
+# to see all past and future logs inside of container
+docker logs -f name-of-container

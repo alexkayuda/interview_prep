@@ -1,0 +1,5 @@
+docker image build -t node-app-image:latest .
+docker container run -d -p 3000:3000 --rm --name node-app-container node-app-image
+docker container stop node-app-container
+docker container prune
+docker image rm node-app-image

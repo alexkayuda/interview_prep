@@ -1,0 +1,121 @@
+
+Step 1: Build an image
+
+    docker login                                                                # DockerHub Account
+    docker image build -t alexkayuda/kubernetes-first-app .
+    # docker tag kub-app-image alexkayuda/kubernetes-first-app                  # alexkayuda/kubernetes-first-app is the name of the DockerHub Repo
+    docker push alexkayuda/kubernetes-first-app
+
+
+Step 2: Run minikube
+
+    minikube start --driver=docker && minikube status
+
+Step 3: Deploy this image to a Kubernetes Pod
+
+    kubectl create deployment kub-deployment-name --image=alexkayuda/kubernetes-first-app
+    kubectl get deployments
+    kubectl get pods
+    
+    # minikube dashboard 
+    minikube addons enable metrics-server
+    minikube dashboard
+    
+    
+Step 4: Expose Deployment
+
+    # expose a Pod created by a Deployment by creating a Service
+    # --port=8080 is what the app inside of our contianer listens on
+    # --type
+    #           ClusterIP - default type - will only be reachable inside the ClusterIP
+    #           NodePort - Will expose the port of the NodePort
+    #           LoadBalancer - BEST but requires a LoadBalancer to be created (AWS and minikube supports it)
+
+    kubectl expose deployment kub-deployment-name --port=8080 --type=LoadBalancer
+    
+    # To Verify that the service of type LoadBalancer was created
+    kubectl get services
+
+    # Find IP of the service 
+    minikube service kub-deployment-name
+
+Step 5: Scale it up (or down)! 
+
+    kubectl scale deployment/kub-deployment-name --replicas=3
+    kubectl get pods
+
+    kubectl scale deployment/kub-deployment-name --replicas=1
+    kubectl get pods
+
+Step 6: Updating deployments
+
+    # 1. First, make changes in a source code
+    # 2. Re-build Docker image and push it to DockerHub again
+    docker image build -t alexkayuda/kubernetes-first-app .
+    docker push alexkayuda/kubernetes-first-app
+
+    # 3. Check current deployments
+    kubectl get deployments
+
+    # 4. Set New Image for specified deployment where each contianer should point to a new image 
+
+    # 1. Update Docker Image and push it to DockerHub
+    docker image build -t alexkayuda/kubernetes-first-app:v2 . && docker push alexkayuda/kubernetes-first-app:v2
+
+
+    #                     Deployment Name               Container Name          Image Name (latest tag by default, otherwise, specify a new one)
+    #                           ^                               ^                       ^
+    #                           |                               |                       |
+    kubectl set image deployment/kub-deployment-name kubernetes-first-app=alexkayuda/kubernetes-first-app:v2
+
+
+    # To monitor the rollout
+    kubectl rollout status deployment/kub-deployment-name
+
+Step 7: Rollback! 
+
+    # First, let's update the deployment one more time
+    kubectl set image deployment/kub-deployment-name kubernetes-first-app=alexkayuda/kubernetes-first-app:v3
+
+    # To monitor the rollout
+    kubectl rollout status deployment/kub-deployment-name
+
+    # Check Rollout history
+    kubectl rollout history deployment/kub-deployment-name
+
+        REVISION  CHANGE-CAUSE
+        1         <none>
+        2         <none>
+        3         <none>
+    
+    # Check Specific Revision history
+    kubectl rollout history deployment/kub-deployment-name --revision=3
+
+        Pod Template:
+            Labels:       app=kub-deployment-name
+                    pod-template-hash=54ccbf599d
+            Containers:
+            kubernetes-first-app:
+                Image:      alexkayuda/kubernetes-first-app:v3
+                Port:       <none>
+                Host Port:  <none>
+                Environment:        <none>
+                Mounts:     <none>
+            Volumes:      <none>
+            Node-Selectors:       <none>
+            Tolerations:  <none>
+
+    # To ROLLBACK to v2 now (previous one)
+    kubectl rollout undo deployment/kub-deployment-name
+
+    # To ROLLBACK to a SPECIFIC revision
+    kubectl rollout undo deployment/kub-deployment-name --to-revision=1
+
+
+Step X: Cleaning up
+    kubectl delete service kub-deployment-name
+    kubectl delete deployment kub-deployment-name
+    minikube stop
+    minikube delete
+    docker container prune 
+    docker image prune

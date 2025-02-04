@@ -1,0 +1,46 @@
+services:
+
+  server: # nginx web server
+    build:
+      # context defines where our Dockerfile will be build. Since, we need acess to src/ and nginx/, we need to build it HERE  
+      context: .
+      dockerfile: ./dockerfiles/nginx.dockerfile
+    ports:
+      - "8000:80"                                     # 80 is nginx default port. Mapped to localhost:8000 
+    depends_on:
+      - php
+      - mysql
+
+  php:  # php server
+    build:
+      context: .
+      dockerfile: ./dockerfiles/php.dockerfile
+    ports:
+      - "3000:9000"
+  
+  mysql:  # Database
+    image: mysql:9.1.0
+    env_file:
+      - ./env/mysql.env
+  
+  composer: # Laravel Utility Container
+    build:
+      context: ./dockerfiles
+      dockerfile: composer.dockerfile
+    volumes:
+    - ./src:/var/www/html                         # Binding src folder with source code to /var/www/html
+  
+  artisan:  # Laravel Utility Container
+    build:
+      context: .
+      dockerfile: ./dockerfiles/php.dockerfile
+    entrypoint: ["php", "/var/www/html/artisan"]
+    volumes:
+      - ./src:/var/www/html
+
+  npm:
+    image: node
+    working_dir: /var/www/html
+    entrypoint: ["npm"]
+    volumes:
+      - ./src:/var/www/html

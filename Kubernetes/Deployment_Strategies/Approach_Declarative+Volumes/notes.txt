@@ -1,0 +1,48 @@
+
+Step 0: minikube 
+
+    # Note: Make sure minikube is up and running
+    minikube start --driver=docker
+    minikube addons enable metrics-server
+    minikube status
+
+Step 1: Define the Deployment strategy in deployment.yaml file
+
+    # Reference: https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/deployment-v1/
+
+
+Step 3: Deploy it
+
+    kubectl apply -f=deployment.yaml
+
+    # Verify
+    kubectl get deployments
+    kubectl get pods
+
+Step 4: Create Service in the service.yaml file
+
+    # Reference: https://kubernetes.io/docs/reference/kubernetes-api/service-resources/service-v1/
+
+Step 5: Create a Service and then EXPOSE it (associate with minikube)
+
+    kubectl apply -f=service.yaml
+
+    minikube service backend-service
+
+Step 6: Volume and Volume Claim
+
+    kubectl apply -f=persistent-volume.yaml -f=persistent-volume-claim.yaml
+
+Step 7: Environment Variable using ConfigMap
+
+    kubectl apply -f=environment.yaml
+
+    kubectl get configmap
+
+Step 8: Update the deployment with all the changes
+
+    kubectl apply -f=deployment.yaml
+
+Step X: Clean Up
+    
+    kubectl delete -f=deployment.yaml -f=service.yaml

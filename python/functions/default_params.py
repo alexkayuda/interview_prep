@@ -12,6 +12,6 @@ def ask_ok(prompt, retries=4, reminder='Please try again!'):
 
 if __name__ == "__main__":
 
-    #ask_ok("Is all good? : ") # will retry 4 times with error message = "please try again"
+    # ask_ok("Is all good? : ") # will retry 4 times with error message = "please try again"
     
     ask_ok("R U 4 Real? : ", retries=2, reminder="Nope, wrong answer!")

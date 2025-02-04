@@ -1,0 +1,63 @@
+# Official Reference: https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/deployment-v1/
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # Name of this Deployment
+  name: my-app-deployment
+  labels:
+    environment: dev
+spec:
+  # Number of desired pods (By Default (if not specified), 1 Pod will be created automatically)
+  replicas: 3
+
+  # REQUIRED: A label selector is a label query over a set of resources.
+  # Will apply this deployment configuration to everything that matches selected labels!!!
+  # Reference: https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/label-selector/#LabelSelector
+  #
+  # key is the key that is defined in the metadata labels key
+  # operators are [ In, NotIn, Exists, DoesNotExist]
+  # values
+  selector:
+    matchLabels:
+      app: my-app
+      tier: backend
+    # matchExpressions:
+    #   - { key: app, operator: In, values: [first-app, 21-app, my-app] }
+
+  # PodTemplateSpec describes the data a pod should have when created from a template
+  template:
+    metadata:
+      labels:
+        app: my-app
+        tier: backend
+
+    # PodSpec is a description of a pod.
+    spec:
+      containers:
+        - name: my-app-pod
+          image: alexkayuda/kubernetes-first-app:latest
+          env:
+            - name: STORY_FOLDER
+              # value: "story" # provice value if we want to hardcode it OR user valueFrom to import it from configMap
+              valueFrom:
+                configMapKeyRef:
+                  name: data-store-name # Name of the ConfigMap (defined in the metadata)
+                  key: folder
+          # How often do we want to check if the image was updated?
+          imagePullPolicy: Always
+          # Periodic probe of container liveness. Container will be restarted if the probe fails.
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 10
+            initialDelaySeconds: 10
+          volumeMounts:
+            - name: story-persistent-volume # (see below)
+              mountPath: /app/story # where inside of a container?
+
+      volumes:
+        - name: story-persistent-volume
+          persistentVolumeClaim:
+            claimName: host-persistent-volume-claim

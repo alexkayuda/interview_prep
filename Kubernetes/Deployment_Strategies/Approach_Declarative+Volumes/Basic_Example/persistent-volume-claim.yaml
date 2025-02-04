@@ -1,0 +1,16 @@
+#
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: host-persistent-volume-claim
+spec:
+  # connect Persistent Volume to this Claim
+  volumeName: host-persistent-volume
+  storageClassName: standard # (Same as in Persistent Volume)
+  accessMode:
+    - ReadWriteOnce
+  # How much do we want to claim from the defined persistent volume? (Can not exceed the defined capacity of the volume)
+  resources:
+    requests:
+      storage: 1Gi

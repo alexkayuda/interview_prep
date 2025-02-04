@@ -1,0 +1,14 @@
+ARG variables are set at BUILD TIME
+ENV variables are set at RUN TIME
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+----- ARGS -----
+
+# The scope of ARG is ONLY inside of the Dockerfile (unlike ENV which is global env variable inside of a container)
+# Can not be embedded in a CMD command because ARG is a build time and not a runtime command
+ARG DEFAULT_PORT=80
+
+# When building a Docker Image, we can simply create 2 version without modifying Dockerfile itself
+docker image build -t my-app:dev .
+docker image build -t my-app:prod --build-arg DEFAULT_PORT=443 .

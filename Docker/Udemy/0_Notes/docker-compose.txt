@@ -1,0 +1,11 @@
+--rm is applied to all containers defined in the docker-compose file
+all container will be part of the same network by default
+    So, no need to do it ourselves; however, can be managed by us as well
+
+
+----- Commands ----
+
+docker compose up
+docker compose up -d            # in detached mode
+docker compose down             # will automatically delete all container (same as --rm)
+docker compose down -v          # 

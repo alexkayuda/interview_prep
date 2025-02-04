@@ -1,0 +1,86 @@
+----- Network Steps -----
+
+# 1. Create Docker Network
+
+    docker network create my-network
+    docker network ls
+
+----- MongoDB Steps -----
+
+# 1. Start mongodb container
+
+    docker container run  -d  --rm -e MONGO_INITDB_ROOT_USERNAME=mongoadmin  -e MONGO_INITDB_ROOT_PASSWORD=secretpassword --network my-network -v mongodb-data:/data/db --name mongodb  mongo
+    
+    docker container run \
+    -d \
+    --rm \      
+    -e MONGO_INITDB_ROOT_USERNAME=mongoadmin \          # DB Username
+    -e MONGO_INITDB_ROOT_PASSWORD=secretpassword \      # DB Password
+    --network my-network \                              # To make data persistent even if container is killed
+    -v mongodb-data:/data/db \ 
+    --name mongodb \
+    mongo
+
+----- Backend Steps -----
+
+# 0. Update the source code. 
+    
+    Update the part that connect to MongoDB
+        if MongoDB Runs Locally:
+            'mongodb://localhost:27017/course-goals'
+        if MongoDB Runs Inside of another container but NOT on the same network:
+            'mongodb://host.docker.internal:27017/course-goals'
+        if MongoDB Runs Inside of another container but with shared network:
+            'mongodb://mongodb:27017/course-goals'
+    In addition, since we user credentials to secure MongoDB, we need to add `username:password@` to our connection string
+        Example: `mongodb://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@mongodb:27017/course-goals?authSource=admin`,
+
+# 1.Create a Dockerfile 
+
+# 2. Build an image
+
+    docker image build -t image-backend .
+
+# 3. Start a container
+
+docker container run -d --rm -p 80:80 --network my-network -e MONGODB_USERNAME=mongoadmin -e MONGODB_PASSWORD=secretpassword -v $(pwd)/backend/logs:/app/logs:ro --name container-backend image-backend
+
+docker container run -p 80:80 --network my-network -e MONGODB_USERNAME=mongoadmin -e MONGODB_PASSWORD=secretpassword -v $(pwd)/backend/logs:/app/logs:ro --name container-backend image-backend
+
+
+    docker container run \
+    -d \
+    --rm \
+    -p 80:80 \
+    --network my-network \
+    -e PORT
+    -e MONGODB_USERNAME=mongoadmin \
+	-e MONGODB_PASSWORD=secretpassword \
+    -v $(pwd)/backend/logs:/app/logs:ro \
+    --name container-backend \
+    image-backend
+
+
+
+----- Frontend Steps -----
+
+# 1.Create a Dockerfile 
+
+# 2. Build an image
+
+    docker image build -t image-frontend .
+
+# 3. Run a container
+
+    docker container run -p 3000:3000 -d --rm -it --name container-frontend image-frontend
+
+    docker container run \
+    -p 3000:3000 \
+    -d \
+    --rm \
+    -it \
+    --name container-frontend \
+    image-frontend
+
+    # NOTE:
+        We need -p here because we want to connect to that container ourself

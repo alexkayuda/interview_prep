@@ -1,14 +1,19 @@
 def divide(x: int, y: int):
     try:
-        result = x / y
+        result = x / y 
     except ZeroDivisionError as err:
-        print(err)
+        print(f"Inside ZeroDivisionError Exception and the error is: {err}")
+    except FileNotFoundError as err:
+        print(f"Inside FileNotFoundError Exception and the error is: {err}")
+    # except:
+    #     print(f"Inside General Exception. Don't know what happened...")
     else:
-        print("result is", result)
+        print(f"Sooo... Calculations went well and the result is {result}")
     finally:
-        print("executing finally clause")
+        print("No Matter what, I will always be here")
 
 
 if __name__ == "__main__":
-    #divide(8, 2)
-    divide(8, 0)
+    print(divide(8, 2))
+    print("\n")
+    print(divide(8, 0))

@@ -1,0 +1,19 @@
+version: "3"
+services:
+  auth-service:
+    build: ./auth-api
+  users-service:
+    build: ./users-api
+    environment:
+    # `auth-service` can be used because DockerCompose creates a network and containers can communicate with each other using names of the services
+      - AUTH_SERVICE_SERVICE_HOST=auth-service
+    ports: 
+      - "8080:8080"
+  tasks-service:
+    build: ./tasks-api
+    ports: 
+      - "8000:8000"
+    environment:
+      TASKS_FOLDER: tasks
+      AUTH_SERVICE_ADDRESS: auth
+    

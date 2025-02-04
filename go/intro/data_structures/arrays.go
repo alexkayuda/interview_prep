@@ -3,13 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	// array of type string of size 4
-	// var names [4]int = [4]string{"Mike", "Jane", "Alex", "John"}
 
+	// array of type string of size 4
 	names := [4]string{"Mike", "Jane", "Alex", "John"}
 	names[0] = "Joe"
 
-	ages := [3]int{23, 24, 25}
+	// ages := [3]int{23, 24, 25}
 
 	fmt.Println(names, len(names))
 

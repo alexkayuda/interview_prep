@@ -1,0 +1,65 @@
+
+---------------------------------------------------------------------------------
+
+IP = IP address shown after User's Service was attached to minikube
+
+1.  POST http://IP:PORT/login
+    BODY
+        {
+            "email" : "test@test.com",
+            "password" : "password"
+        }
+    
+    Expected Return:
+        {
+            "token" : "value_here"
+        }
+
+2.  POST http://IP:PORT/signup
+    BODY
+        {
+            "email" : "test@test.com",
+            "password" : "password"
+        }
+    
+    Expected Return:
+        {
+            "message" : "user_created"
+        }
+
+
+---------------------------------------------------------------------------------
+
+IP = IP address shown after User's Service was attached to minikube
+
+3.  GET http://IP:PORT/tasks
+    HEADER
+        {
+            key : authorization
+            value: "Bearer abc" // <- this is a valud dummmy token created in AUTH service
+        }
+    
+    Expected Return:
+        {
+            task LOADED
+            some tasks details
+        }
+
+4. GET http://IP:PORT/tasks
+     HEADER
+        {
+            key : authorization
+            value: "Bearer abc" // <- this is a valud dummmy token created in AUTH service
+        }
+
+    BODY
+        {
+            "text" : "dummy text",
+            "title" : "dummy title"
+        }
+    
+    Expected Return:
+        {
+            task STORED
+            some tasks details
+        }

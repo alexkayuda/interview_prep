@@ -1,0 +1,42 @@
+Step 0: Clean Up and Prepare
+    
+    minikube delete 
+    minikube start
+    minikube status 
+    minikube dashboard
+
+Step 1: Docker Build and Push the images to DockerHub
+
+    1. Create a new Repos in DockerHub
+        
+        akayuda/kub-users
+        akayuda/kub-auth
+        akayuda/kub-tasks
+
+    2. Building and Pushing USERS Docker Image from main directory 
+
+            docker build -t akayuda/kub-users -f ./users-api/Dockerfile ./users-api/
+            docker push akayuda/kub-users
+
+    3. Building and Pushing AUTH Docker Image from main directory 
+
+            docker build -t akayuda/kub-auth -f ./auth-api/Dockerfile ./auth-api/
+            docker push akayuda/kub-auth
+    
+    4. Building and Pushing TASKS Docker Image from main directory 
+
+            docker build -t akayuda/kub-tasks -f ./tasks-api/Dockerfile ./tasks-api/
+            docker push akayuda/kub-tasks            
+
+Step 2: Users Deployment
+
+    kubectl apply -f=./_kubernetes/deployment-users.yaml
+
+    kubectl get deployments
+    kubectl get pods
+
+Step 3: Users Service
+
+     kubectl apply -f=./_kubernetes/service-users.yaml
+
+     minikube service service-users

@@ -1,0 +1,28 @@
+
+Step 1: docker-compose.yaml file
+
+Step 2:
+
+    Individually start a COMPOSER container 
+
+    docker-compose run --rm composer create-project --prefer-dist --no-dev laravel/laravel .
+
+    Note 1: `up` command has built-in --rm flag; however, `run` does not. Therefore, we are adding `--rm` to keep it clean
+    Note 2: ENTRYPOINT is defined in the COMPOSE dockerfile. it will append `composer --ignore-platform-reqs` to every command ran inside 
+    Note 3: `.` points to the WORKDIR specified in the Dockerfile  
+
+
+Step 3:
+
+    Start all 3 services (server, mysql, and php)
+
+    docker-compose up -d --build server
+
+    Note 1: because server depends on mysql and php, ALL 3 will be UP!
+
+
+Step 4:
+
+    Test Database Connection
+
+    docker compose run --rm artisan migrate 

@@ -1,0 +1,35 @@
+----- Networks -----
+
+docker network create my-network
+docker network ls
+
+----- MongoDB -----
+
+# First, we need a mongodb container. Instead of creating a new Docker file, just run the following command
+
+docker run -d --name mongodb --network my-network mongo
+
+----- Node JS -----
+docker image build -t networking-image .
+docker container run --rm -d -p 3000:3000 --name networking-container --network my-network networking-image
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+NodeJS Example: 
+
+mongoose.connect(
+  // If we run mongodb locally, use host.docker.internal IP Address
+  // 'mongodb://host.docker.internal:27017/swfavorites',
+
+  // if we run mongodb inside of another container, 
+  // use name of the container to automatically resolve IP adress of needed container
+  'mongodb://mongodb:27017/swfavorites',
+  { useNewUrlParser: true },
+  (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      app.listen(3000);
+    }
+  }
+);

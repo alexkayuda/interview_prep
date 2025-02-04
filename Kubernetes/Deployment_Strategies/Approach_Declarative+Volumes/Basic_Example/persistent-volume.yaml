@@ -1,0 +1,20 @@
+# Documentation: https://kubernetes.io/docs/reference/kubernetes-api/config-and-storage-resources/persistent-volume-v1/
+# Types:         https://kubernetes.io/docs/concepts/storage/persistent-volumes/#types-of-persistent-volumes
+
+# Defines the Persisten Volume (Type, Capacity, and how it will be accessed)
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: host-persistent-volume
+spec:
+  capacity:
+    storage: 1Gi
+  storageClassName: standard # ??? More advanced and need to dive deeper into it
+  volumeMode: Filesystem # vs Block
+  accessModes:
+    - ReadWriteOnce # Volume is both Read & Write Volume and can be attached to a SINGLE Node (multiple Pods on a single Node)
+    # - ReadWriteMany # Volume is both Read & Write Volume and can be attached to MULTIPLE Nodes (multiple Pods on multiple Nodes)
+    # - ReadOnlyMany # Volume is only Read Volume and can be attached to many Nodes (multiple Pods on multiple Nodes)
+  hostPath:
+    path: /data
+    type: DirectoryOrCreate

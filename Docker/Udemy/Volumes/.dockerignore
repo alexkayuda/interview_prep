@@ -1,0 +1,4 @@
+# Specify which folders and file should NOT be copied by COPY command in a Dockerfile
+
+.git
+Dockerfile

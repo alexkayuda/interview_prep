@@ -1,0 +1,5 @@
+# Download Docker Image from DockerHub
+docker pull image-name
+
+# Build Image locally
+docker image build ./directory/Dockerfile -t my-app-image-name

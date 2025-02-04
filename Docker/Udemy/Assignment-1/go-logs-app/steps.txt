@@ -1,0 +1,10 @@
+docker image build -t go-app-image:latest .
+
+docker container run -p 3000:3000 --rm --name go-app-container go-app-image
+
+# COPY GENERATED LOGS FROM CONTAINER TO A LOCAL FOLDER
+docker container cp go-app-container:/app/logs ./
+
+docker container stop go-app-container
+
+docker image rm go-app-image

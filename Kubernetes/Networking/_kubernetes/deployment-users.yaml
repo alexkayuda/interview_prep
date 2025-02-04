@@ -1,0 +1,51 @@
+# Official Reference: https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/deployment-v1/
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-users
+spec:
+  replica: 1 # Number of desired pods (By Default (if not specified), 1 Pod will be created automatically)
+  selector:
+    matchLabels:
+      app: users
+    #  matchExpressions:
+    # - { key: app, operator: In, values: [first-app, 21-app, my-app] }
+
+  # PodTemplateSpec describes the data a pod should have when created from a template
+  template:
+    metadata:
+      app: users
+
+    # PodSpec is a description of a pod
+    spec:
+      containers:
+        - name: users-container
+          image: akayuda/kub-users:latest # DockerHub Repo
+          imagePullPolicy: Always # How often do we want to check if the image was updated?
+          livenessProbe: # Container will be restarted if the probe fails.
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 10
+            initialDelaySeconds: 10
+          # volumeMounts:
+          #   - name: story-persistent-volume # (see below)
+          #     mountPath: /app/story # where inside of a container?
+          env:
+            # valueFrom:
+            #     configMapKeyRef:
+            #       name: data-store-name # Name of the ConfigMap (defined in the metadata)
+            #       key: folder
+            - name: AUTH_SERVICE_ADDRESS
+              value: "service-auth.default" # if auth-container is in a DIFFERENT POD (USING DNS instead of an IP adress) Also, "default" refers to the NAMESPACES
+              # value: "10.99.104.252" # get IP of the Auth Service after its creation (kubectl get services)
+              # value: localhost # if auth-container is in THE SAME POD (BUT we dont want that)
+
+        # - name: auth-container
+        #   image: akayuda/kub-auth:latest # DockerHub Repo
+
+      # volumes:
+      #   - name: story-persistent-volume
+      #     persistentVolumeClaim:
+      #       claimName: host-persistent-volume-claim

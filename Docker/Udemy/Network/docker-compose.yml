@@ -1,0 +1,55 @@
+# Named Volumes
+volumes:
+  mongodb-data:
+  backend-logs:
+
+services:
+  mongodb:
+    container_name: mongodb
+    image: "mongo"  # use prebuild images
+    volumes:
+      - mongodb-data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=secretpassword
+    # env_file:
+    #   - ./folder/file.env
+
+  backend:
+    container_name: backend
+    depends_on:
+      - mongodb
+    # image: "backend-image" # use if this image already exists
+    # build: ./backend  # path to a Dockerfile for easy set up
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile # can be any name like Dockerfile-dev or Dockerfile-prod
+      args:
+        - DEFAULT_PORT=80
+    ports:
+      - "80:80"
+    volumes:
+      -  backend-logs:/app/logs # Named Volume
+      # - /app/node_modules # Anonumous Volumes 
+      # - ./backend:/app # Example of a Bind backend folder to app folder
+    environment:
+      - MONGODB_USERNAME=mongoadmin
+      - MONGODB_PASSWORD=secretpassword
+    # env_file:
+    #   - ./folder/file.env
+
+  frontend:
+    container_name: frontend
+    depends_on:
+      - backend
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile # can be any name like Dockerfile-dev or Dockerfile-prod
+      args:
+        - DEFAULT_PORT=3000
+    ports:
+      - "3000:3000"
+    stdin_open: true  # -i
+    tty: true         # -t = attaching terminal
+    
+    

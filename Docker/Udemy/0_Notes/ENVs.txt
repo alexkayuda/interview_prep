@@ -1,0 +1,22 @@
+ARG variables are set at BUILD TIME
+ENV variables are set at RUN TIME
+
+-------------------------------------------------------------------------------------------------------------------------------------
+----- ENV in a Dockerfile -----
+
+# In a Dockerfile, environment variable PORT with a default value 80
+# Set as an environment variable inside of a container as well.
+# Can be overwritten by --env PORT=8000 command
+ENV PORT 80
+
+Example Command: 
+docker container run -d -p 3000:8000 --env PORT=8000 --env OTHER=1234 image-name-here
+
+------ .env file -----
+# Alternatively, we can create .env file and put all variables in that file. Then, update the command to run container:
+docker container run -d -p 3000:8000 --env-file ./.env image-name-here
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+

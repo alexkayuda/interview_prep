@@ -1,0 +1,31 @@
+# Docker Volumes
+
+Anonumous Volumes are managed by Docker
+    - Need to define in Dockerfile with a path inside of a container
+    - NOT persistent (if conter is deleted - volume is also deleted)
+    - Usecases:
+        - TBD
+
+Named Volumes are managed by Docker
+    - Created 
+    - persistent (if container is deleted - volume will NOT be deleted)
+    - Usecases:
+        - Think of EFS (shared across all containers)
+
+-----
+# Docker Volume Commands
+
+docker volume ls
+docker volume my-app-volume inspect
+docker volume prune
+docker volume rm my-app-volume
+
+-----
+# Docker Volume Example
+
+docker container run -d -p 8000:80 \
+--name feedback-app-container \
+--rm \
+-v feedback:/app/feedback \         # This is a Named Volume (persistent)
+-v $(pwd):/app:ro  \                # This is a Bidirectional Bind Mount; Therefore, use :ro to make it READ ONLY
+feedback-app-image:volume

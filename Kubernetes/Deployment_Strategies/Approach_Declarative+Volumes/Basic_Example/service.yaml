@@ -1,0 +1,28 @@
+# Official Reference: https://kubernetes.io/docs/reference/kubernetes-api/service-resources/service-v1/
+
+# A Service is an Object that exposes Pods to the Cluster or Externally (web browser)
+apiVersion: v1
+kind: Service
+metadata:
+  # Name of this Service
+  name: backend-service
+  labels:
+    environment: dev
+spec:
+  # REQUIRED: A label selector is a label query over a set of resources.
+  selector:
+    app: my-app # name specified in the PodTemplateSpec in the deployment.yaml file
+  ports:
+    - protocol: "TCP"
+      port: 80 # external port (browser)
+      targetPort: 8080 # application port
+    # - protocol: "TCP"
+    #   port: 443
+    #   targetPort: 443
+
+  # Determines how the Service is exposed. Defaults to ClusterIP.  [ExternalName, ClusterIP, NodePort, and LoadBalancer]
+  # "ClusterIP" allocates a cluster-internal IP address for load-balancing to endpoints.
+  # "NodePort" builds on ClusterIP and allocates a port on every node which routes to the same endpoints as the clusterIP.
+  # "LoadBalancer" builds on NodePort and creates an external load-balancer (if supported in the current cloud) which routes to the same endpoints as the clusterIP.
+  # "ExternalName" aliases this service to the specified externalName. Several other fields do not apply to ExternalName services.
+  type: LoadBalancer

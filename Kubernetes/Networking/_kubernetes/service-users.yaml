@@ -1,0 +1,19 @@
+# Official Reference: https://kubernetes.io/docs/reference/kubernetes-api/service-resources/service-v1/
+
+# A Service is an Object that exposes Pods to the Cluster or Externally (web browser)
+apiVersion: v1
+kind: Service
+metadata:
+  # Name of this Service
+  name: service-users
+  labels:
+    environment: dev
+spec:
+  # REQUIRED: Selecting Pods that we want this Service to be attached to
+  selector:
+    app: users # name specified in the PodTemplateSpec in the deployment-users.yaml file
+  ports:
+    - protocol: "TCP"
+      port: 8080 # external port (browser)
+      targetPort: 8080 # application port
+  type: LoadBalancer # Determines how the Service is exposed. Defaults to ClusterIP.  [ExternalName, ClusterIP, NodePort, and LoadBalancer]

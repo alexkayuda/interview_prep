@@ -1,0 +1,47 @@
+-----
+
+# General Notes:
+
+temp folder     -> files that can be lost. Therefore, will be stored inside a container only. 
+feedback folder -> files that can NOT be lost. Therefore, we need a persistent storage (Volumes)
+
+-----
+
+# Docker Commands:
+docker image build -t feedback-app-image:volume .
+
+# docker container run -d -p 8000:80 --name feedback-app-container --rm feedback-app-image:volume
+docker container run -d -p 8000:80 --name feedback-app-container -- rm -v feedback:/app/feedback feedback-app-image:volume
+
+docker container run -d -p 8000:80 \
+--name feedback-app-container \
+--rm \
+-v feedback:/app/feedback \
+-v $(pwd):/app:ro  \
+feedback-app-image:volume
+# NOTE -v $(pwd):/app:ro   <- :ro = Read Only
+
+docker container stop feedback-app-container
+
+docker container prune
+docker image prune
+
+-----
+
+# Docker Volumes
+
+docker volume ls
+docker volume feedback inspect
+docker volume prune
+
+Anonumous Volumes are managed by Docker
+    - Need to define in Dockerfile with a path inside of a container
+    - NOT persistent (if conter is deleted - volume is also deleted)
+    - Usecases:
+        - TBD
+
+Named Volumes are managed by Docker
+    - Created 
+    - persistent (if container is deleted - volume will NOT be deleted)
+    - Usecases:
+        - Think of EFS (shared across all containers)

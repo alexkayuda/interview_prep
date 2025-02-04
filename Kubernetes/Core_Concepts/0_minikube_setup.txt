@@ -1,0 +1,32 @@
+On Windows:
+
+1) Install Chocolatey for Individual Use:
+    - Run PowerShell as Admin
+    - Run the following command:
+
+        Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+2) Install kubernetes-cli
+    - Run PowerShell as Admin
+    - Run the following command:
+
+        choco install kubernetes-cli
+
+    - Verify by running
+
+        kubectl version --client
+
+3) Install minikube (Reference: https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2Fchocolatey) 
+
+    - Run PowerShell as Admin
+    - Run the following command:
+
+        choco install minikube
+
+4) Start minikube with Docker as a Driver
+    - Run the following command:
+
+        minikube start --driver=docker
+        minikube status
+        minikube dashboard
+        minikube stop

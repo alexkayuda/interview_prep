@@ -1,0 +1,34 @@
+# Official Reference: https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/deployment-v1/
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-tasks
+spec:
+  replica: 1 # Number of desired pods (By Default (if not specified), 1 Pod will be created automatically)
+  selector:
+    matchLabels:
+      app: tasks
+    #  matchExpressions:
+    # - { key: app, operator: In, values: [first-app, 21-app, my-app] }
+
+  # PodTemplateSpec describes the data a pod should have when created from a template
+  template:
+    metadata:
+      app: tasks
+
+    # PodSpec is a description of a pod
+    spec:
+      containers:
+        - name: tasks-container
+          image: akayuda/kub-tasks:latest # DockerHub Repo
+       env:
+        # valueFrom:
+        #     configMapKeyRef:
+        #       name: data-store-name # Name of the ConfigMap (defined in the metadata)
+        #       key: folder
+        - name: AUTH_SERVICE_ADDRESS
+          value: "service-auth.default" # if auth-container is in a DIFFERENT POD (USING DNS instead of an IP adress) Also, "default" refers to the NAMESPACES
+        - name: TASKS_FOLDER
+          value: tasks # folder name
+          

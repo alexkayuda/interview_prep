@@ -1,5 +1,9 @@
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 
+# filter(functions, itterable_datastructure)
+filtered = set(filter(lambda x: True if x=="apple" else False, fruits))
+print(filtered)
+
 # list.append(element) - Add an item to the end of the list
 fruits.append('grape')
 print(fruits)
