@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.1" pages="5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.1" pages="6">
   <diagram id="rmVU-vrO2c9pKdc3CdrP" name="General">
     <mxGraphModel dx="1667" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -341,6 +341,19 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Wz-gikbtTpYIROjBOSpo" name="Exceptions">
+    <mxGraphModel dx="1667" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="import logging&#xa;&#xa;&#xa;# Set up basic logging configuration&#xa;logging.basicConfig(level=logging.ERROR, format=&#39;%(asctime)s - %(message)s&#39;)&#xa;&#xa;&#xa;def process_data(data):&#xa;    try:&#xa;&#xa;        # Simulate some data processing that may raise different exceptions&#xa;        if data == &quot;file_error&quot;:&#xa;            raise FileNotFoundError(&quot;File not found!&quot;)&#xa;        elif data == &quot;value_error&quot;:&#xa;            raise ValueError(&quot;Invalid value provided!&quot;)&#xa;        else:&#xa;            return f&quot;Processed {data}&quot;&#xa;    &#xa;    except FileNotFoundError as e:&#xa;        logging.error(f&quot;File error: {e}&quot;)&#xa;        print(&quot;File not found. Please check the file path.&quot;)&#xa;    &#xa;    except ValueError as e:&#xa;        logging.error(f&quot;Value error: {e}&quot;)&#xa;        print(&quot;Invalid value provided.&quot;)&#xa;&#xa;    except Exception as e:&#xa;        logging.error(f&quot;Unexpected error: {e}&quot;)&#xa;        print(&quot;An unexpected error occurred.&quot;)&#xa;    &#xa;    # Will only be executed if the try block doesn&#39;t raise any exceptions.&#xa;    else:&#xa;        print(&quot;Processing completed successfully.&quot;)&#xa;    &#xa;    # Will always execute no matter what&#xa;&#xa;    finally:&#xa;        print(&quot;End of processing.&quot;)&#xa;&#xa;&#xa;# Example usage&#xa;process_data(&quot;file_error&quot;)&#xa;process_data(&quot;value_error&quot;)&#xa;process_data(&quot;valid_data&quot;)" link="import logging&#xa;&#xa;&#xa;# Set up basic logging configuration&#xa;logging.basicConfig(level=logging.ERROR, format=&#39;%(asctime)s - %(message)s&#39;)&#xa;&#xa;&#xa;def process_data(data):&#xa;    try:&#xa;        # Simulate some data processing that may raise different exceptions&#xa;        if data == &quot;file_error&quot;:&#xa;            raise FileNotFoundError(&quot;File not found!&quot;)&#xa;        elif data == &quot;value_error&quot;:&#xa;            raise ValueError(&quot;Invalid value provided!&quot;)&#xa;        else:&#xa;            return f&quot;Processed {data}&quot;&#xa;    except FileNotFoundError as e:&#xa;        logging.error(f&quot;File error: {e}&quot;)&#xa;        print(&quot;File not found. Please check the file path.&quot;)&#xa;    except ValueError as e:&#xa;        logging.error(f&quot;Value error: {e}&quot;)&#xa;        print(&quot;Invalid value provided.&quot;)&#xa;    except Exception as e:&#xa;        logging.error(f&quot;Unexpected error: {e}&quot;)&#xa;        print(&quot;An unexpected error occurred.&quot;)&#xa;    else:&#xa;        print(&quot;Processing completed successfully.&quot;)&#xa;    finally:&#xa;        print(&quot;End of processing.&quot;)&#xa;&#xa;&#xa;# Example usage&#xa;process_data(&quot;file_error&quot;)&#xa;process_data(&quot;value_error&quot;)&#xa;process_data(&quot;valid_data&quot;)" id="rb7mTk601cRcooP4i4O3-2">
+          <mxCell style="text;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="40" y="40" width="550" height="630" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
