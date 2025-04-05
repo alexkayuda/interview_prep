@@ -1,6 +1,343 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.1">
-  <diagram name="Page-1" id="vk9x5sYv3ajoylWNlfLo">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.1" pages="5">
+  <diagram id="rmVU-vrO2c9pKdc3CdrP" name="General">
+    <mxGraphModel dx="1667" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="TAZLalA3jtRvvnzD3SyR" name="Strings">
+    <mxGraphModel dx="1667" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Lists" id="vk9x5sYv3ajoylWNlfLo">
+    <mxGraphModel dx="1667" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-1" value="Lists" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="940" height="731" as="geometry" />
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-2" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-1">
+          <mxGeometry y="30" width="940" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-3" value="Initialization" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-2">
+          <mxGeometry width="190" height="94" as="geometry">
+            <mxRectangle width="190" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-4" value="my_list = []" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-2">
+          <mxGeometry x="190" width="290" height="94" as="geometry">
+            <mxRectangle width="290" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-5" value="&lt;div&gt;from typing import List&lt;/div&gt;&lt;div&gt;&lt;br&gt;my_list = List[str]&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-2">
+          <mxGeometry x="480" width="270" height="94" as="geometry">
+            <mxRectangle width="270" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-6" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-2">
+          <mxGeometry x="750" width="190" height="94" as="geometry">
+            <mxRectangle width="190" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-7" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-1">
+          <mxGeometry y="124" width="940" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-8" value="Adding Values" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-7">
+          <mxGeometry width="190" height="136" as="geometry">
+            <mxRectangle width="190" height="136" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-9" value="&lt;div style=&quot;text-align: justify;&quot;&gt;# append adds an element to the END of a list:&lt;br&gt;&lt;br&gt;furniture = [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;b&gt;furniture.append(&#39;bed&#39;)&lt;/b&gt;&lt;br&gt;&lt;br&gt;#&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&#39;table&#39;, &#39;chair&#39;, &#39;rack, &#39;bed&#39;&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-7">
+          <mxGeometry x="190" width="290" height="136" as="geometry">
+            <mxRectangle width="290" height="136" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-10" value="&lt;div style=&quot;text-align: justify;&quot;&gt;# insert adds an element to a list &lt;br&gt;# at a given position:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;furniture = [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;b&gt;furniture.insert(1, &#39;bed&#39;)&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;# [&#39;table&#39;, &#39;bed&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-7">
+          <mxGeometry x="480" width="270" height="136" as="geometry">
+            <mxRectangle width="270" height="136" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-11" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-7">
+          <mxGeometry x="750" width="190" height="136" as="geometry">
+            <mxRectangle width="190" height="136" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-12" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-1">
+          <mxGeometry y="260" width="940" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-13" value="Removing Values" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-12">
+          <mxGeometry width="190" height="94" as="geometry">
+            <mxRectangle width="190" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-14" value="&lt;div style=&quot;text-align: justify;&quot;&gt;# del removes an item using the index:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;furniture = [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;b&gt;del furniture[2]&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# [&#39;table&#39;, &#39;chair&#39;, &#39;shelf&#39;]&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-12">
+          <mxGeometry x="190" width="290" height="94" as="geometry">
+            <mxRectangle width="290" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-15" value="&lt;div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;# remove removes an item&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;with using actual value of it:&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;furniture = [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;furniture.remove(&#39;chair&#39;)&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-12">
+          <mxGeometry x="480" width="270" height="94" as="geometry">
+            <mxRectangle width="270" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-16" value="&lt;div&gt;animals = [&#39;cat&#39;, &#39;bat&#39;, &#39;rat&#39;, &#39;fox&#39;]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;animals.pop()&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;animals.pop(0)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&#39;&lt;/div&gt;&lt;div&gt;print(animals) #&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[&#39;bat&#39;, &#39;rat&#39;]&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-12">
+          <mxGeometry x="750" width="190" height="94" as="geometry">
+            <mxRectangle width="190" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-17" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-1">
+          <mxGeometry y="354" width="940" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-18" value="Slicing" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-17">
+          <mxGeometry width="190" height="186" as="geometry">
+            <mxRectangle width="190" height="186" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-19" value="&lt;div style=&quot;text-align: justify;&quot;&gt;furniture = [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;furniture[&lt;b&gt;0:4&lt;/b&gt;] &lt;b&gt;# 4 is NOT included&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;furniture[&lt;b&gt;1:3&lt;/b&gt;]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# [&#39;chair&#39;, &#39;rack&#39;]&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-17">
+          <mxGeometry x="190" width="290" height="186" as="geometry">
+            <mxRectangle width="290" height="186" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-20" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;furniture = [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;furniture[0:-1]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;furniture[:2]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# [&#39;table&#39;, &#39;chair&#39;]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;furniture[1:]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# [&#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-17">
+          <mxGeometry x="480" width="270" height="186" as="geometry">
+            <mxRectangle width="270" height="186" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-21" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-17">
+          <mxGeometry x="750" width="190" height="186" as="geometry">
+            <mxRectangle width="190" height="186" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-22" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-1">
+          <mxGeometry y="540" width="940" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-23" value="Finding Element" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-22">
+          <mxGeometry width="190" height="97" as="geometry">
+            <mxRectangle width="190" height="97" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-24" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;# Returns the index of an element &lt;br&gt;# or raises a ValueError Exception&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;furniture = [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;b&gt;furniture.index(&#39;chair&#39;)&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# 1&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-22">
+          <mxGeometry x="190" width="290" height="97" as="geometry">
+            <mxRectangle width="290" height="97" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-25" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-22">
+          <mxGeometry x="480" width="270" height="97" as="geometry">
+            <mxRectangle width="270" height="97" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-26" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-22">
+          <mxGeometry x="750" width="190" height="97" as="geometry">
+            <mxRectangle width="190" height="97" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-27" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-1">
+          <mxGeometry y="637" width="940" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-28" value="Sort vs Sorted&lt;br&gt;+ reversed" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-27">
+          <mxGeometry width="190" height="94" as="geometry">
+            <mxRectangle width="190" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-29" value="&lt;div style=&quot;text-align: justify;&quot;&gt;numbers = [2, 5, 3.14, 1, -7]&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;numbers.sort()&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-foreground); font-family: var(--prism-font-family); font-size: var(--prism-font-size); font-weight: inherit; word-spacing: normal; text-align: left;&quot;&gt;sort&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-punctuation); font-family: var(--prism-font-family); font-size: var(--prism-font-size); font-weight: inherit; word-spacing: normal; text-align: left; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235);&quot; class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-foreground); font-family: var(--prism-font-family); font-size: var(--prism-font-size); font-weight: inherit; word-spacing: normal; text-align: left;&quot;&gt;reverse&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-operator); font-family: var(--prism-font-family); font-size: var(--prism-font-size); font-weight: inherit; word-spacing: normal; text-align: left; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235);&quot; class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-boolean); font-family: var(--prism-font-family); font-size: var(--prism-font-size); font-weight: inherit; word-spacing: normal; text-align: left; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235);&quot; class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-punctuation); font-family: var(--prism-font-family); font-size: var(--prism-font-size); font-weight: inherit; word-spacing: normal; text-align: left; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235);&quot; class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;# [-7, 1, 2, 3.14, 5]&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-27">
+          <mxGeometry x="190" width="290" height="94" as="geometry">
+            <mxRectangle width="290" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-30" value="&lt;div style=&quot;text-align: justify;&quot;&gt;numbers = [2, 5, 3.14, 1, -7]&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;numbers.&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-foreground); font-family: var(--prism-font-family); font-size: var(--prism-font-size); word-spacing: normal; text-align: left;&quot;&gt;sort&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-punctuation); font-family: var(--prism-font-family); font-size: var(--prism-font-size); word-spacing: normal; text-align: left; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235);&quot; class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-foreground); font-family: var(--prism-font-family); font-size: var(--prism-font-size); word-spacing: normal; text-align: left;&quot;&gt;reverse&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-operator); font-family: var(--prism-font-family); font-size: var(--prism-font-size); word-spacing: normal; text-align: left; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235);&quot; class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-boolean); font-family: var(--prism-font-family); font-size: var(--prism-font-size); word-spacing: normal; text-align: left; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235);&quot; class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-punctuation); font-family: var(--prism-font-family); font-size: var(--prism-font-size); word-spacing: normal; text-align: left; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235);&quot; class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: var(--prism-punctuation); font-family: var(--prism-font-family); font-size: var(--prism-font-size); font-weight: inherit; word-spacing: normal; text-align: left; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235);&quot; class=&quot;token punctuation&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-27">
+          <mxGeometry x="480" width="270" height="94" as="geometry">
+            <mxRectangle width="270" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D19h-QXn4RZyZfKL9ENg-31" value="# sorted returns a NEW list&lt;div&gt;sorted_list = &lt;b&gt;sorted&lt;/b&gt;(numbers)&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="D19h-QXn4RZyZfKL9ENg-27">
+          <mxGeometry x="750" width="190" height="94" as="geometry">
+            <mxRectangle width="190" height="94" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="-A0lfw_gHYPNUqGqJsgc" name="Sets">
+    <mxGraphModel dx="1667" dy="1877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-73" value="Sets" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;" vertex="1" parent="1">
+          <mxGeometry x="30" y="-1076" width="820" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-74" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-73">
+          <mxGeometry y="30" width="820" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-75" value="Initialization" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-74">
+          <mxGeometry width="210" height="68" as="geometry">
+            <mxRectangle width="210" height="68" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-76" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;my_set = set()&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=center;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-74">
+          <mxGeometry x="210" width="290" height="68" as="geometry">
+            <mxRectangle width="290" height="68" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-77" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-74">
+          <mxGeometry x="500" width="200" height="68" as="geometry">
+            <mxRectangle width="200" height="68" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-78" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-74">
+          <mxGeometry x="700" width="120" height="68" as="geometry">
+            <mxRectangle width="120" height="68" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-79" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-73">
+          <mxGeometry y="98" width="820" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-80" value="Add &amp;amp; Update" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-79">
+          <mxGeometry width="210" height="69" as="geometry">
+            <mxRectangle width="210" height="69" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-81" value="my_set.add(value)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-79">
+          <mxGeometry x="210" width="290" height="69" as="geometry">
+            <mxRectangle width="290" height="69" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-82" value="my_set.update([list, of, values])" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-79">
+          <mxGeometry x="500" width="200" height="69" as="geometry">
+            <mxRectangle width="200" height="69" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-83" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-79">
+          <mxGeometry x="700" width="120" height="69" as="geometry">
+            <mxRectangle width="120" height="69" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-84" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-73">
+          <mxGeometry y="167" width="820" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-85" value="Remove &amp;amp; Discard&lt;br&gt;&lt;br&gt;remove() will raise a key error if the value doesn’t exist." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-84">
+          <mxGeometry width="210" height="68" as="geometry">
+            <mxRectangle width="210" height="68" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-86" value="my_set.remove(value)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-84">
+          <mxGeometry x="210" width="290" height="68" as="geometry">
+            <mxRectangle width="290" height="68" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-87" value="my_set.discard(value)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-84">
+          <mxGeometry x="500" width="200" height="68" as="geometry">
+            <mxRectangle width="200" height="68" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-88" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-84">
+          <mxGeometry x="700" width="120" height="68" as="geometry">
+            <mxRectangle width="120" height="68" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-89" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-73">
+          <mxGeometry y="235" width="820" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-90" value="Union&lt;br&gt;&lt;br&gt;&lt;div&gt;union() or | will create a new set with all the elements from the sets provided.&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-89">
+          <mxGeometry width="210" height="95" as="geometry">
+            <mxRectangle width="210" height="95" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-91" value="&lt;div style=&quot;text-align: justify;&quot;&gt;s1 = {1, 2, 3}&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;s2 = {3, 4, 5}&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;s1.union(s2)&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;# or &#39;&lt;b&gt;s1 | s2&lt;/b&gt;&#39;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# Result = {1, 2, 3, 4, 5}&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-89">
+          <mxGeometry x="210" width="290" height="95" as="geometry">
+            <mxRectangle width="290" height="95" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-92" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-89">
+          <mxGeometry x="500" width="200" height="95" as="geometry">
+            <mxRectangle width="200" height="95" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-93" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-89">
+          <mxGeometry x="700" width="120" height="95" as="geometry">
+            <mxRectangle width="120" height="95" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-94" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-73">
+          <mxGeometry y="330" width="820" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-95" value="Intersection&lt;br&gt;&lt;br&gt;intersection() or &amp;amp; will return a set with only the elements that are common to all of them" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-94">
+          <mxGeometry width="210" height="90" as="geometry">
+            <mxRectangle width="210" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-96" value="&lt;div style=&quot;text-align: justify;&quot;&gt;s1 = {1, 2, 3}&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;s2 = {2, 3, 4}&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;s3 = {3, 4, 5}&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;b&gt;s1.intersection(s2, s3)&lt;/b&gt;&amp;nbsp; &lt;br&gt;# or &#39;&lt;b&gt;s1 &amp;amp; s2 &amp;amp; s3&#39;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# Result = {3}&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-94">
+          <mxGeometry x="210" width="290" height="90" as="geometry">
+            <mxRectangle width="290" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-97" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-94">
+          <mxGeometry x="500" width="200" height="90" as="geometry">
+            <mxRectangle width="200" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-98" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-94">
+          <mxGeometry x="700" width="120" height="90" as="geometry">
+            <mxRectangle width="120" height="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-99" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-73">
+          <mxGeometry y="420" width="820" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-100" value="Difference&lt;br&gt;&lt;br&gt;difference() or - will return only the elements that are unique to the first set (invoked set)." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-99">
+          <mxGeometry width="210" height="170" as="geometry">
+            <mxRectangle width="210" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-101" value="&lt;div style=&quot;text-align: justify;&quot;&gt;s1 = {1, 2, 3}&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;s2 = {2, 3, 4}&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;b&gt;s1.difference(s2)&amp;nbsp; &lt;br&gt;&lt;/b&gt;# or &#39;&lt;b&gt;s1 - s2&lt;/b&gt;&#39;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# Result = {1}&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;s2.difference(s1)&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;# or &#39;&lt;b&gt;s2 - s1&lt;/b&gt;&#39;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;# Result = {4}&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-99">
+          <mxGeometry x="210" width="290" height="170" as="geometry">
+            <mxRectangle width="290" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-102" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-99">
+          <mxGeometry x="500" width="200" height="170" as="geometry">
+            <mxRectangle width="200" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ocqWE7AWS8g2sVKFfby1-103" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-99">
+          <mxGeometry x="700" width="120" height="170" as="geometry">
+            <mxRectangle width="120" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaeiCOCpSPmdzsSRFNy_-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ocqWE7AWS8g2sVKFfby1-73">
+          <mxGeometry y="590" width="820" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="BaeiCOCpSPmdzsSRFNy_-2" value="Loop" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="BaeiCOCpSPmdzsSRFNy_-1">
+          <mxGeometry width="210" height="170" as="geometry">
+            <mxRectangle width="210" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaeiCOCpSPmdzsSRFNy_-3" value="&lt;div style=&quot;text-align: justify;&quot;&gt;my_set = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;for item in my_set:&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&amp;nbsp; &amp;nbsp; print(item)&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="BaeiCOCpSPmdzsSRFNy_-1">
+          <mxGeometry x="210" width="290" height="170" as="geometry">
+            <mxRectangle width="290" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaeiCOCpSPmdzsSRFNy_-4" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="BaeiCOCpSPmdzsSRFNy_-1">
+          <mxGeometry x="500" width="200" height="170" as="geometry">
+            <mxRectangle width="200" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BaeiCOCpSPmdzsSRFNy_-5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" parent="BaeiCOCpSPmdzsSRFNy_-1">
+          <mxGeometry x="700" width="120" height="170" as="geometry">
+            <mxRectangle width="120" height="170" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ydmt4NTh4wrCFxl_A-eI" name="Dictionaries">
+    <mxGraphModel dx="1667" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
