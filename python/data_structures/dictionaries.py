@@ -1,7 +1,3 @@
-# Dictionary = HashMap
-# Key-Value Pair
-
-
 tel = {'jack': 4098, 'sape': 4139}
 
 for key, value in tel.items():

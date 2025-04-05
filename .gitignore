@@ -4,5 +4,11 @@ Security+/
 # Do not commit AWS Certs Prep Notes
 AWS_Certs_Prep/
 
+# DevSecOps
+DevSecOps/
+
+# System_Design
+System_Design/
+
 # ignore useless stuff
-.idea
+.idea/*

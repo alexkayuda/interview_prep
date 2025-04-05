@@ -12,14 +12,15 @@ if __name__ == "__main__":
     result = original_string[::-1]
     print(f"Reversed String: {result}")
 
-    # Reversed
+    # Reversed -> creates a new string
     result = "".join(reversed(original_string))
     print(f"Reversed String: {result}")
 
-    # Looping and swapping
+    # Swapping in-place
     result = list(original_string)
-    for index in range(0, math.floor(len(original_string) / 2)): # half of the loop only
-        result[index], result[len(original_string) - 1] = result[len(original_string) - 1], result[index]
+    for i in range(0, int(len(original_string) / 2)): # half of the loop only
+        result[i], result[len(original_string) -1 -i] = result[len(original_string) -1 -i], result[i]
+    
     result = "".join(result)
     print(f"Reversed String: {result}")
 

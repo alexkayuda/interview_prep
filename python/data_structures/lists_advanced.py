@@ -25,6 +25,6 @@ double_list1 = [x*2 for x in list] # [2,4,6,8,10]
 number_square = [(x, x**2) for x in range(6)] # [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
 
 
-# flatten a list using a listcomp with two 'for'
+# flatten a matrix using a listcomp with two 'for'
 matrix = [[1,2,3], [4,5,6], [7,8,9]]
 flat_matrix = [num for elem in matrix for num in elem] # [1, 2, 3, 4, 5, 6, 7, 8, 9]

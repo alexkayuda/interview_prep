@@ -1,20 +1,4 @@
-basic_dict = {}
-print(type(basic_dict)) # dict
-
-basic_dict = {int}
-print(type(basic_dict)) # set
-
-basic_dict = {int : int}
-print(type(basic_dict)) # dict
-
-basic_dict = {int , int}
-print(type(basic_dict)) # set
-
-complex_dict = {str : list[int]}
-print(type(complex_dict)) # dict
-
-print("---" * 20)
-
+complex_dict = {}
 complex_dict['a'] = [1]
 complex_dict['b'] = [1]
 complex_dict['c'] = [1]
@@ -26,9 +10,6 @@ complex_dict['a'].append(2)
 
 for key, value in complex_dict.items():
     print(f"{key} : {value}")
-
-#complex_dict['a'].append(1)
-#print(complex_dict.items())
 
 print("---" * 20)
 
