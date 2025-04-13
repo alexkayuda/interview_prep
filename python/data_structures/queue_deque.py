@@ -18,4 +18,4 @@ item = q.get()
 print(item)  # Output: 1
 
 # Check if queue is empty
-print(q.empty())  # Output: False
+print(q.empty())  # Output: False 

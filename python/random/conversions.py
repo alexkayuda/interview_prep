@@ -33,3 +33,11 @@ print(type(bin_num))
 
 
 print("---" * 10)
+
+# conver int to a list of str
+num = 45678
+num_to_str = str(num)
+print(num_to_str)
+
+num_list = [char for char in num_to_str]
+print(num_list)

@@ -1,3 +1,63 @@
+### Input is an Array or String:
+
+- Is the array sorted?
+
+  - Yes: Use `Binary Search` or `Two Pointers`.
+  - No: Move to the next checks.
+
+- What is the question asking?
+
+  - Number of ways to do something / Max-Min of something:
+    - If decisions are dependent on each other, use `Dynamic Programming`.
+    - If decisions are independent, use `Greedy`.
+  - Is something possible?:
+    - Try `Backtracking`.
+
+- Does it involve string manipulation?
+
+  - Prefix matching: Use `Trie`.
+  - Building strings or finding distances
+    - Use `Stack` or `Monotonic Stack`.
+
+- Is it about finding a specific element?
+
+  - Use a `Hash Map` or `Set`.
+
+- Does it involve elements being added/removed in a sliding window fashion?
+
+  - Use a `Sliding Window` or Counting `Hash Map`.
+
+- Is the problem about continuously finding the max/min element or removing them?
+  - Use a `Heap` or `Monotonic Queue`.
+
+---
+
+### Input is a Graph:
+
+- Does the question involve finding the shortest path or the fewest steps?
+- Yes: Use Breadth-First Search (BFS).
+- No: Use Depth-First Search (DFS).
+
+---
+
+### Input is a Tree (probably binary):
+
+- Does the question involve specific depths/levels?
+  - Yes: Use `Breadth-First Search (BFS)`.
+  - No: Use `Depth-First Search (DFS)`.
+
+---
+
+### Input is a Linked List:
+
+- Does it involve detecting cycles?
+  - Use `Fast and Slow Pointers`.
+- Does it involve reversing or modifications?
+  - Use a `“prev” pointer` for reversing.
+  - Use a `“dummy” pointer` for maintaining the original head.
+
+---
+
 1.  Sliding Window
 
     - Description: This pattern is used to find a subset of elements in a data structure (usually an array or string) that satisfies certain conditions. You maintain a window (a subset of elements) and slide it across the structure to solve the problem efficiently.

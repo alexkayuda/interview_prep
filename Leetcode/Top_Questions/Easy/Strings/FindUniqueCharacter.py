@@ -19,15 +19,14 @@ Input: s = "aabb"
 Output: -1
 
 '''
+from collections import OrderedDict
 
 def firstUniqChar(s: str) -> int:
     
-    letters = {}
+    letters = OrderedDict()
 
     # convert str to list of char
     char_list = list(s)
-
-    # print(char_list)
 
     for index, letter in enumerate(char_list):
         if letter not in letters:

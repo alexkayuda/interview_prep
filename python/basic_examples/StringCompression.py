@@ -15,8 +15,6 @@ def compress(chars: list[str]) -> int:
     pointer1, pointer2 = 0, 1
     result = 1
 
-    #print(f"I'm gonna loop {len(chars) - 1} times")
-
     for char in range(0, len(chars) - 1):
         # if chars are the same
         if chars[pointer1] == chars[pointer2]:
@@ -57,6 +55,6 @@ if __name__ == "__main__":
     stringThree = ["a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a"] # ["a", "1", "2"] -> 3
 
 
-    #print(compress(stringOne))
+    print(compress(stringOne))
     print(compress(stringTwo))
-    # print(compress(stringThree))
+    print(compress(stringThree))
