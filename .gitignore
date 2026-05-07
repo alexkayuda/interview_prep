@@ -12,3 +12,4 @@ System_Design/
 
 # ignore useless stuff
 .idea/*
+.DS_Store
